@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "start:services": "concurrently \"npm install --prefix user && npm start --prefix user\" \"npm install --prefix transaction-service && npm start --prefix transaction-service\" \"npm install --prefix notification-service && npm start --prefix notification-service\"",
+    "start": "node app.js"
+  },
+  "devDependencies": {
+    "concurrently": "^6.5.1"
+  },
+  "dependencies": {
+    "express-validator": "^7.0.1"
+  }
+}
